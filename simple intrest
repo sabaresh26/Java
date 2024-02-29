@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        Scanner obj = new Scanner(System.in);
+
+    System.out.println("Enter age:");
+    int age = obj.nextInt();
+    if(age<=11)
+     {
+         float p = 10000, r= 15, n= 5;
+        float SI = (p * n * r) / 100;
+        System.out.println("Simple interest = " + SI);
+     }
+     else if(age>=58)
+     {
+          float p = 10000, r= 12, n= 5;
+        float SI = (p * n * r) / 100;
+        System.out.println("Simple interest = " + SI);
+         
+     }
+     else
+     {
+        float p = 10000, r= 10, n= 5;
+        float SI = (p * n * r) / 100;
+        System.out.println("Simple interest = " + SI);
+     }
+     
+    }
+}
